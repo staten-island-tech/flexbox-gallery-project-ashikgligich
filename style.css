@@ -1,0 +1,13 @@
+body{
+    
+    background-color: rgb(75, 75, 100);
+    font-size: 35;
+    font-family: "Open Sans", sans-serif;
+}
+.bar{
+    padding-left: 2vw;
+    padding-top: 1vw;
+    width: 98vw;
+    background-color: rgb(50, 50, 75);
+
+}
