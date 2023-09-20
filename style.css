@@ -1,6 +1,6 @@
 body{
     
-    background-color: rgb(75, 75, 100);
+    background-color: rgba(75, 75, 100, 0.24);
     font-size: 35;
     font-family: "Open Sans", sans-serif;
     margin: 0%;
@@ -11,12 +11,20 @@ body{
     width: 98vw;
     background-color: rgb(50, 50, 75);
 }
-.card img{
+.flex-container{
+  flex-flow: row wrap;
+  display: flex;
+height: 50vw;
+width: 100vw;
+align-content: space-between;
+}
+.grow img{
 width: 25vw;
 height: auto;
 
 }
 .card {
+    display: flex;
     background-color: rebeccapurple;
     border-radius: 10px;
     width: 25vw;
@@ -37,4 +45,22 @@ height: auto;
     100% {
       transform: rotate(360deg);
     }
+  }
+
+  .grow {
+    display: flex;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+    height: 20vw;
+    width: 25vw;
+    margin: 5px 1% 5px 1%;
+    float: left;
+    position: relative;
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    text-align: center;
+    overflow: hidden;
+  }
+  .grow:hover {
+    height: 35vw;
   }
