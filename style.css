@@ -3,11 +3,38 @@ body{
     background-color: rgb(75, 75, 100);
     font-size: 35;
     font-family: "Open Sans", sans-serif;
+    margin: 0%;
 }
 .bar{
     padding-left: 2vw;
     padding-top: 1vw;
     width: 98vw;
     background-color: rgb(50, 50, 75);
+}
+.card img{
+width: 25vw;
+height: auto;
 
 }
+.card {
+    background-color: rebeccapurple;
+    border-radius: 10px;
+    width: 25vw;
+    height: auto;
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+  }
+  .card:hover {
+    animation-play-state: running;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
