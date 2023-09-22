@@ -10,6 +10,10 @@ padding-top: 1vw;
 width: 98vw;
 background-color: rgb(50, 50, 75);
 }
+.top-bar img{
+  height: 5vw;
+  width: 5vw;
+}
 .flex-container{
 /*display: flex;*/
 height: 100vw;
