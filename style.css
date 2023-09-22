@@ -1,18 +1,17 @@
 body{
 background-color: rgba(75, 75, 100);
-font-size: 35;
+font-size: 5vw;
 font-family: "Open Sans", sans-serif;
 margin: 0%;
 }
-.bar{
+.top-bar{
 padding-left: 2vw;
 padding-top: 1vw;
 width: 98vw;
 background-color: rgb(50, 50, 75);
 }
 .flex-container{
-
-
+/*display: flex;*/
 height: 100vw;
 width: 100vw;
 align-content: space-between;
@@ -48,42 +47,28 @@ width: 25vw;
     }
     100% {
       transform: rotate(360deg);
-    }
+  }
 }
 
 
 
 .grow {
-
-    
-
-padding: 5px 5px 5px 5px;
+/*display: flex;*/
+padding: 1vw 1vw 1vw 1vw;
 border-radius: 10px;
 height: 20vw;
-
-margin: 5px 1% 5px 1%;
-
-
 transition: height 2s;
 overflow:hidden;
-
-
-transform-origin: 49% 49%;
-    transform-box: fill-box;
-
+/*transform-origin: 49% 49%;*/
+transform-box: fill-box;
 }
 .grow:hover {
-  
-  height: 50vw;
-  
-  
+height: 75vw;
 }
 
 .grow:hover div{
-    position: relative;
-    top:150px;
-
-    transform: scale(2);
-    transition: transform 1.05s ease-in-out;
-    
+position: relative;
+top:15vw;
+transform: scale(2);
+transition: transform 1.05s ease-in-out;   
 }
