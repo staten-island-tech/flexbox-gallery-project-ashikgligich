@@ -11,30 +11,31 @@ width: 98vw;
 background-color: rgb(50, 50, 75);
 }
 .flex-container{
-flex-flow: row wrap;
-display: flex;
-height: 50vw;
+
+
+height: 100vw;
 width: 100vw;
 align-content: space-between;
 justify-content: center;
-align-items: center;
+
 text-align: center;
 }
+
 .flex-container img{
 width: 25vw;
-height: auto;
 
 }
+
 .card {
     display: flex;
     background-color: rebeccapurple;
     border-radius: 10px;
     width: 25vw;
-    height: auto;
     animation-name: rotate;
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-play-state: paused;
+    height: 400px;
     
   }
   .card:hover {
@@ -49,20 +50,40 @@ height: auto;
       transform: rotate(360deg);
     }
 }
+
+
+
 .grow {
-display: flex;
+
+    
+
 padding: 5px 5px 5px 5px;
 border-radius: 10px;
 height: 20vw;
-width: 25vw;
+
 margin: 5px 1% 5px 1%;
-float: top;
-position: relative;
+
+
 transition: height 2s;
 overflow:hidden;
 
+
+transform-origin: 49% 49%;
+    transform-box: fill-box;
+
 }
 .grow:hover {
-  height: 35vw;
-  transform: scale(2);
+  
+  height: 50vw;
+  
+  
+}
+
+.grow:hover div{
+    position: relative;
+    top:150px;
+
+    transform: scale(2);
+    transition: transform 1.05s ease-in-out;
+    
 }
