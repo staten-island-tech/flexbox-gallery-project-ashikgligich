@@ -1,83 +1,182 @@
-body{
-background-color: rgba(75, 75, 100);
-font-size: 2.5vw;
-font-family: "Open Sans", sans-serif;
-margin: 0%;
+body {
+  background-color: rgba(75, 75, 100);
+  font-size: 2.5vw;
+  font-family: "Open Sans", sans-serif;
+  margin: 0%;
+
+
+
+  font-family: Arial, sans-serif;
+  background-image: url(Untitled\ presentation.png);
+  background-size: cover;
+  height: 100vh;
 }
-.top-bar{
-padding-left: 2vw;
-padding-top: 1vw;
-width: 98vw;
-background-color: rgb(50, 50, 75);
+.top-bar {
+  padding-left: 2vw;
+  padding-top: 1vw;
+  width: 98vw;
+  background-color: rgb(50, 50, 75);
 }
-.top-bar img{
+.top-bar img {
   height: 2.5vw;
   width: 2.5vw;
 }
-.flex-container{
-display: flex;
-height: 100vh;
-width: 100vw;
-
-justify-content: center;
-flex-flow: row wrap;
-
-text-align: center;
+.flex-container {
+  padding-top: 2.5vw;
+  display: flex;
+  width: 100vw;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  text-align: center;
 }
 
-.flex-container img{
-width: 20vw;
-
+.flex-container img {
+  width: 20vw;
 }
 
 .card {
-    display: flex;
-    background-color: rebeccapurple;
-    border-radius: 1vw;
-    width: 20vw;
-    animation-name: rotate;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-play-state: paused;
-    height: 20vh;
-    
+  display: flex;
+  background-color: rebeccapurple;
+  border-radius: 1vw;
+  width: 20vw;
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+  height: 20vh;
+}
+.card:hover {
+  animation-play-state: running;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
   }
-  .card:hover {
-    animation-play-state: running;
-  }
-  
-  @keyframes rotate {
-    0% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(360deg);
+  100% {
+    transform: rotate(360deg);
   }
 }
 
-
-
 .grow {
-display: flex;
-padding: 1vw 1vw 1vw 1vw;
-border-radius: 10px;
-height: 20vh;
-transition: all 2s;
-overflow:hidden;
-transform-box: fill-box;
-box-shadow: 1vw 1vh 1vw 1vh rgb(0, 0, 0, 0.5);
+  background-color: gray;
+  display: flex;
+  padding: 1vw 1vw 1vw 1vw;
+  border-radius: 1vw;
+  height: 20vw;
+  transition: all 2s;
+  overflow: hidden;
+  transform-box: fill-box;
+  box-shadow: 1vw 1vh 1vw 1vh rgb(0, 0, 0, 0.5);
 }
 
 .grow:hover {
-height: 75vh;
-position: relative;
-z-index: 100;
+  height: 50vh;
+  position: relative;
+  z-index: 100;
+}
+
+.grow:hover div {
+  position: relative;
+  transition: transform 1.05s ease-in-out;
+}
+body h2{
+  display: block;
+  margin-block-start: 1vw;
+  margin-block-end: 1vw;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
 
 
-.grow:hover div{
-position: relative;
-top:15vh;
-transform: scale(2);
-transition: transform 1.05s ease-in-out;   
+
+h1 {
+  text-align: center;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #06D85F;
+  margin: 80px 0;
+}
+
+.card {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
 }
