@@ -22,30 +22,31 @@ body {
   width: 5vh;
 }
 .flex-container {
-  padding-top: 2.5vw;
+  padding-top: 10vh;
   display: flex;
   width: 100vw;
   justify-content: space-evenly;
   flex-flow: row wrap;
   text-align: center;
+  align-items: center;
 }
 
 .flex-container img {
   width: 20vw;
 }
 
-.card {
+.card-spin {
   display: flex;
   background-color: rebeccapurple;
   border-radius: 1vw;
   width: 20vw;
   animation-name: rotate;
-  animation-duration: 2s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-play-state: paused;
   height: 20vh;
 }
-.card:hover {
+.card-spin:hover {
   animation-play-state: running;
 }
 
@@ -97,7 +98,7 @@ h1 {
   margin: 80px 0;
 }
 
-.card {
+.card-spin {
   width: 40%;
   margin: 0 auto;
   background: rgba(255,255,255,0.2);
@@ -178,4 +179,19 @@ h1 {
   .popup{
     width: 70%;
   }
+}
+
+
+#animation3{
+  width: 462.4px;
+  height: 356.2px;
+  background: url(colage\ of\ jut.png\ now\ claer\ aiden\ helped.png)left center;
+  background-size: cover;
+  animation: play 5s steps(4)infinite;
+  display: inline-block;
+}
+
+@keyframes play{
+
+  100%{background-position: -1849.6px;}
 }
