@@ -169,7 +169,7 @@ h1 {
   background-size: cover;
   max-height: 30%;
   overflow: auto;
-  font-size: 2vh;
+  font-size: 1vw;
 }
 
 @media screen and (max-width: 700px){
@@ -194,3 +194,9 @@ h1 {
 
   100%{background-position: -1849.6px;}
 }
+
+
+
+
+
+
